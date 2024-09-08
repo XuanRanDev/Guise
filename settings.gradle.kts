@@ -8,6 +8,7 @@ pluginManagement {
             }
         }
         mavenCentral()
+        mavenLocal()
         gradlePluginPortal()
     }
 }
@@ -23,6 +24,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Guise"
+rootProject.name = "GuiseMe"
 include(":app")
 include(":hook")
+include(":lservice")

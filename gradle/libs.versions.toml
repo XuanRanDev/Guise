@@ -21,6 +21,7 @@ betterandroid = "1.0.1"
 yuki = "1.2.0"
 xposed = "82"
 lservice = "1.0.0"
+libsu = "5.2.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -55,7 +56,9 @@ yuki-api = { module = "com.highcapable.yukihookapi:api", version.ref = "yuki" }
 yuki-ksp-xposed = { module = "com.highcapable.yukihookapi:ksp-xposed", version.ref = "yuki" }
 xposed-api = { module = "de.robv.android.xposed:api", version.ref = "xposed" }
 kotlin-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinSerialization" }
-lservice = { module = "io.github.houvven:lservice", version.ref = "lservice" }
+#lservice = { module = "io.github.houvven:lservice", version.ref = "lservice" }
+libsu-service = { module = "com.github.topjohnwu.libsu:service", version.ref = "libsu" }
+rikkax-parcelablelist = { module = "dev.rikka.rikkax.parcelablelist:parcelablelist", version = "2.0.1" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -65,3 +68,4 @@ ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
 #compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+

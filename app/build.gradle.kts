@@ -33,11 +33,6 @@ android {
             enableV1Signing = true
             enableV2Signing = true
             enableV3Signing = true
-            val properties = loadProperties(rootProject.file("local.properties").path)
-            storeFile = File(properties.getProperty("sign.store.file"))
-            storePassword = properties.getProperty("sign.store.password")
-            keyAlias = properties.getProperty("sign.key.alias")
-            keyPassword = properties.getProperty("sign.key.password")
         }
     }
     buildTypes {
@@ -121,7 +116,7 @@ dependencies {
 
     implementation(libs.kotlin.serialization.json)
     implementation(libs.betterandroid.extension.system)
-    implementation(libs.lservice)
-    implementation(libs.libsu.io)
+    //implementation(libs.lservice)
+    implementation(project(":lservice"))
     implementation(libs.hiddenapibypass)
 }
