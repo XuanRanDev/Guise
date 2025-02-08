@@ -242,12 +242,26 @@ internal fun SettingScreen() {
             verticalAlignment = Alignment.CenterVertically,
         ) {
             Hyperlink(
-                label = "更新地址",
-                url = "https://github.com/Xposed-Modules-Repo/com.houvven.guise/releases",
+                label = "原作者源码地址",
+                url = "https://github.com/houvven/Guise",
                 color = MaterialTheme.colorScheme.primary,
                 style = MaterialTheme.typography.titleMedium
             )
-            SimplifyIcon(Icons.Default.Link, tint = MaterialTheme.colorScheme.primary)
+            Text("原作者已删库，原因尚不了解。")
+        }
+
+
+        Row(
+            modifier = Modifier.padding(start = 20.dp, top = 10.dp),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Hyperlink(
+                label = "本版本源码地址",
+                url = "https://github.com/XuanRanDev/Guise",
+                color = MaterialTheme.colorScheme.primary,
+                style = MaterialTheme.typography.titleMedium
+            )
+            Text("本版本的源码地址，代码来源为之前从原作者处克隆而来，仅供学习交流，如侵权可通过issues提出")
         }
 
         Title(text = "反馈地址")
